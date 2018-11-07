@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: c20dfc6d46ae49d4faa6b2dad3156c4b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bed
+    100002: Carpet
+    100004: Chair
+    100006: Floor
+    100008: //RootNode
+    100010: Lamp1
+    100012: Lamp2
+    100014: Matress
+    100016: Skirting1
+    100018: Skirting2
+    100020: Skirting3
+    100022: TableBoxInside
+    100024: TableBoxOutside
+    100026: TableConnection
+    100028: TableSurface
+    100030: Teleporter
+    100032: Walls
+    100034: Wardrobe
+    100036: WardrobeDoorLeft
+    100038: WardrobeDoorMiddle
+    100040: WardrobeDoorRight
+    100042: WardrobeHanger
+    100044: Window
+    400000: Bed
+    400002: Carpet
+    400004: Chair
+    400006: Floor
+    400008: //RootNode
+    400010: Lamp1
+    400012: Lamp2
+    400014: Matress
+    400016: Skirting1
+    400018: Skirting2
+    400020: Skirting3
+    400022: TableBoxInside
+    400024: TableBoxOutside
+    400026: TableConnection
+    400028: TableSurface
+    400030: Teleporter
+    400032: Walls
+    400034: Wardrobe
+    400036: WardrobeDoorLeft
+    400038: WardrobeDoorMiddle
+    400040: WardrobeDoorRight
+    400042: WardrobeHanger
+    400044: Window
+    2100000: 'Material #52'
+    2100002: 'Material #51'
+    2100004: 'Material #27'
+    2100006: No Name
+    2100008: 'Material #190'
+    2100010: 'Material #189'
+    2100012: 'Material #192'
+    2100014: 'Material #191'
+    2100016: 'Material #194'
+    2100018: 'Material #193'
+    2100020: 'Material #131'
+    2100022: 'Material #122'
+    2100024: 'Material #120'
+    2100026: 'Material #144'
+    2300000: Bed
+    2300002: Carpet
+    2300004: Chair
+    2300006: Floor
+    2300008: Lamp1
+    2300010: Lamp2
+    2300012: Matress
+    2300014: Skirting1
+    2300016: Skirting2
+    2300018: Skirting3
+    2300020: TableBoxInside
+    2300022: TableBoxOutside
+    2300024: TableConnection
+    2300026: TableSurface
+    2300028: Teleporter
+    2300030: Walls
+    2300032: Wardrobe
+    2300034: WardrobeDoorLeft
+    2300036: WardrobeDoorMiddle
+    2300038: WardrobeDoorRight
+    2300040: WardrobeHanger
+    2300042: Window
+    3300000: Bed
+    3300002: Carpet
+    3300004: Chair
+    3300006: Floor
+    3300008: Lamp1
+    3300010: Lamp2
+    3300012: Matress
+    3300014: Skirting1
+    3300016: Skirting2
+    3300018: Skirting3
+    3300020: TableBoxInside
+    3300022: TableBoxOutside
+    3300024: TableConnection
+    3300026: TableSurface
+    3300028: Teleporter
+    3300030: Walls
+    3300032: Wardrobe
+    3300034: WardrobeDoorLeft
+    3300036: WardrobeDoorMiddle
+    3300038: WardrobeDoorRight
+    3300040: WardrobeHanger
+    3300042: Window
+    4300000: Bed
+    4300002: Matress
+    4300004: TableSurface
+    4300006: TableBoxOutside
+    4300008: TableConnection
+    4300010: TableBoxInside
+    4300012: Chair
+    4300014: Carpet
+    4300016: Wardrobe
+    4300018: WardrobeDoorRight
+    4300020: WardrobeDoorLeft
+    4300022: WardrobeDoorMiddle
+    4300024: WardrobeHanger
+    4300026: Skirting1
+    4300028: Skirting2
+    4300030: Skirting3
+    4300032: Window
+    4300034: Walls
+    4300036: Teleporter
+    4300038: Lamp1
+    4300040: Lamp2
+    4300042: Floor
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
