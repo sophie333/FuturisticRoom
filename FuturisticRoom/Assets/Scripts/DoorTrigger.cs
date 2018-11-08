@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
-using TMPro;
 
 public class DoorTrigger : MonoBehaviour
 {
@@ -12,12 +11,14 @@ public class DoorTrigger : MonoBehaviour
     [SerializeField]
     private AudioSource s_slidingDoorOpen;
 
-
     [SerializeField]
     private AudioSource s_slidingDoorClose;
 
     [SerializeField]
     private GameObject t_openDoor;
+
+    [SerializeField]
+    private GameObject a_screwdriver;
 
     private bool opened = false;
 
@@ -34,6 +35,14 @@ public class DoorTrigger : MonoBehaviour
                 opened = true;
                 s_slidingDoorOpen.Play();
                 anim.Play("DoorOpen");
+            }
+        }
+        else if (player && opened)
+        {
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                player.hasScrewdriver = true;
+                a_screwdriver.SetActive(false);
             }
         }
     }
