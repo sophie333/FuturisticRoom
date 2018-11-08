@@ -22,8 +22,7 @@ public class TeleporterBehavior : MonoBehaviour {
 
     [SerializeField]
     private GameObject t_repairTeleporter;
-
-    // Use this for initialization
+    
     void Start () {
         s_explosion.Play();
         s_welding.Play();
@@ -39,17 +38,22 @@ public class TeleporterBehavior : MonoBehaviour {
             t_repairTeleporter.SetActive(true);
             if (Input.GetKeyDown(KeyCode.R))
             {
+                player.hasScrewdriver = false;
+                t_repairTeleporter.SetActive(false);
+
                 s_screwdriver.Play();
-                StartCoroutine(Wait());
-                flare.SetActive(false);
-                bubbles.SetActive(true);
+                StartCoroutine(Wait(player));
             }
         }
     }
 
-    IEnumerator Wait()
+    IEnumerator Wait(FirstPersonController player)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
+        flare.SetActive(false);
+        s_welding.Stop();
+        bubbles.SetActive(true);
+
     }
 }
 

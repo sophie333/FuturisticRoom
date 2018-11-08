@@ -18,9 +18,13 @@ public class DoorTrigger : MonoBehaviour
     private GameObject t_openDoor;
 
     [SerializeField]
+    private GameObject t_pickupWrench;
+
+    [SerializeField]
     private GameObject a_screwdriver;
 
     private bool opened = false;
+    private bool pickedUp = false;
 
     private void OnTriggerStay(Collider other)
     {
@@ -35,14 +39,19 @@ public class DoorTrigger : MonoBehaviour
                 opened = true;
                 s_slidingDoorOpen.Play();
                 anim.Play("DoorOpen");
+                t_openDoor.SetActive(false);
             }
         }
-        else if (player && opened)
+        else if (player && opened && !pickedUp)
         {
+            t_pickupWrench.SetActive(true);
+
             if (Input.GetKeyDown(KeyCode.P))
             {
+                pickedUp = true;
                 player.hasScrewdriver = true;
                 a_screwdriver.SetActive(false);
+                t_pickupWrench.SetActive(false);
             }
         }
     }
