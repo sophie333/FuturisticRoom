@@ -57,7 +57,7 @@ LightmapSettings:
   m_LightmapEditorSettings:
     serializedVersion: 10
     m_Resolution: 2
-    m_BakeResolution: 20
+    m_BakeResolution: 60
     m_AtlasSize: 512
     m_AO: 1
     m_AOMaxDistance: 1
@@ -74,8 +74,8 @@ LightmapSettings:
     m_MixedBakeMode: 2
     m_BakeBackend: 1
     m_PVRSampling: 1
-    m_PVRDirectSampleCount: 32
-    m_PVRSampleCount: 256
+    m_PVRDirectSampleCount: 84
+    m_PVRSampleCount: 712
     m_PVRBounces: 2
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
@@ -279,14 +279,14 @@ LightProbeGroup:
   m_GameObject: {fileID: 126710069}
   m_Enabled: 1
   m_SourcePositions:
-  - {x: 1, y: 0.9999998, z: 2.7205458}
+  - {x: 1, y: 0.9999995, z: 2.4923306}
   - {x: 1, y: 0.99999994, z: 0.1408583}
-  - {x: 1, y: -1.0000002, z: 2.7205458}
+  - {x: 1, y: -1.0000005, z: 2.4923306}
   - {x: 1, y: -1.0000001, z: 0.1408583}
-  - {x: -0.06898451, y: 0.9999998, z: 2.7205458}
-  - {x: -0.06898451, y: 0.99999994, z: 0.1408583}
-  - {x: -0.06898451, y: -1.0000002, z: 2.7205458}
-  - {x: -0.06898451, y: -1.0000001, z: 0.1408583}
+  - {x: 0.06454778, y: 0.6799482, z: 2.4923303}
+  - {x: 0.24772692, y: 0.77987605, z: 0.14085841}
+  - {x: 0.06454778, y: -0.74163914, z: 2.4923308}
+  - {x: 0.17700481, y: -0.7802936, z: 0.1408583}
 --- !u!95 &126710074
 Animator:
   serializedVersion: 3
@@ -5562,6 +5562,8 @@ GameObject:
   - component: {fileID: 576094348}
   - component: {fileID: 576094347}
   - component: {fileID: 576094346}
+  - component: {fileID: 576094350}
+  - component: {fileID: 576094349}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -5628,6 +5630,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &576094349
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576094345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 0.301289, z: 1.0000002}
+  m_Center: {x: 0, y: -0.1249582, z: 0.5000001}
+--- !u!65 &576094350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576094345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6179361, y: 2.017639, z: 1.0000002}
+  m_Center: {x: -0.008718282, y: -0.98313344, z: 0.5000001}
 --- !u!1 &590815389
 GameObject:
   m_ObjectHideFlags: 0
@@ -6303,6 +6329,7 @@ GameObject:
   - component: {fileID: 904216119}
   - component: {fileID: 904216118}
   - component: {fileID: 904216117}
+  - component: {fileID: 904216120}
   m_Layer: 0
   m_Name: Wardrobe
   m_TagString: Untagged
@@ -6368,6 +6395,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &904216120
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904216116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.59999996, y: 4.9900007, z: 2.6900008}
+  m_Center: {x: 0, y: 0, z: 1.3450004}
 --- !u!1 &905088064
 GameObject:
   m_ObjectHideFlags: 0
@@ -7425,6 +7464,9 @@ GameObject:
   - component: {fileID: 1346028869}
   - component: {fileID: 1346028868}
   - component: {fileID: 1346028867}
+  - component: {fileID: 1346028872}
+  - component: {fileID: 1346028871}
+  - component: {fileID: 1346028870}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -7490,6 +7532,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1346028870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346028866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.8989882, y: 0.15647359, z: 2.705001}
+  m_Center: {x: 2.8744943, y: -2.5717645, z: 1.3475003}
+--- !u!65 &1346028871
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346028866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.8989882, y: 0.17739005, z: 2.705001}
+  m_Center: {x: 2.8744943, y: 2.5613065, z: 1.3475003}
+--- !u!65 &1346028872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346028866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16504288, y: 5.300001, z: 2.705001}
+  m_Center: {x: 5.7414675, y: 4.93828e-15, z: 1.3475003}
 --- !u!1 &1363181474
 GameObject:
   m_ObjectHideFlags: 0
@@ -7501,6 +7579,7 @@ GameObject:
   - component: {fileID: 1363181477}
   - component: {fileID: 1363181476}
   - component: {fileID: 1363181475}
+  - component: {fileID: 1363181478}
   m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
@@ -7566,6 +7645,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1363181478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1363181474}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5089438, y: 0.43700987, z: 0.55011487}
+  m_Center: {x: -0.23500718, y: 0.0064950585, z: 0.27505744}
 --- !u!1 &1364229730
 GameObject:
   m_ObjectHideFlags: 0
@@ -8543,6 +8634,7 @@ GameObject:
   - component: {fileID: 1773316064}
   - component: {fileID: 1773316063}
   - component: {fileID: 1773316062}
+  - component: {fileID: 1773316065}
   m_Layer: 0
   m_Name: TableSurface
   m_TagString: Untagged
@@ -8608,6 +8700,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1773316065
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1773316061}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7971026, y: 0.79999995, z: 0.71999997}
+  m_Center: {x: -0.8835513, y: 0, z: 0.35999998}
 --- !u!1 &1880882575
 GameObject:
   m_ObjectHideFlags: 0
